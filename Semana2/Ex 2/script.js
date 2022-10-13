@@ -1,3 +1,4 @@
+// [M1S02] Ex 2 - Dado uma idade exibe a classificação dela
 function classificacaoPorIdade() {
   const idade = prompt("Qual é a idade?");
 
