@@ -1,4 +1,4 @@
-// [M1S02] Ex 6 - Construa uma calculadora
+// [M1S02] Ex 7 - Verifique a estação do ano
 
 function verificaEstacao() {
   let estacao = "";
