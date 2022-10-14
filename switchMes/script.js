@@ -1,5 +1,5 @@
 function switchMes() {
-  const mes = parseInt(prompt("Digite o numero do Mês."));
+  let mes = parseInt(prompt("Digite o numero do Mês."));
 
   switch (mes) {
     case 1:
@@ -40,6 +40,7 @@ function switchMes() {
       break;
     default:
       alert("Mês inválido");
+      mes = parseInt(prompt("Digite o numero do Mês."));
       break;
   }
 }
