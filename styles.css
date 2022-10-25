@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-logo {
+  align-items: center;
+  background-color: brown;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  height: 50px;
+  width: 50px;
+}
+
+.header-title {
+  color: aliceblue;
+}
