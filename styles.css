@@ -10,6 +10,7 @@ header {
   background-color: black;
   display: flex;
   justify-content: space-around;
+  height: 125px;
 }
 
 .header-logo {
@@ -18,11 +19,25 @@ header {
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  margin: 10px 0;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
 }
 
 .header-title {
   color: aliceblue;
+  font-size: larger;
+  font-weight: bold;
+}
+
+footer {
+  align-items: center;
+  background-color: black;
+  bottom: 0;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  position: fixed;
+  width: 100%;
 }
