@@ -30,8 +30,9 @@ header {
 }
 
 main {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .container {
@@ -107,6 +108,15 @@ main {
   background-color: #da190b;
 }
 
+.form-group select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+  margin: 5px 0;
+  padding: 0 20px;
+  width: 100%;
+}
+
 footer {
   align-items: center;
   background-color: black;
@@ -116,6 +126,5 @@ footer {
   flex-direction: column;
   justify-content: center;
   height: 125px;
-  position: fixed;
   width: 100%;
 }

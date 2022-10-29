@@ -24,3 +24,12 @@ form.addEventListener("submit", (e) => {
   form.reset();
   alert(`Conta criada com sucesso. Número da conta: ${newAccount.conta}`);
 });
+
+const select = document.querySelector("select");
+select.addEventListener("change", (e) => {
+  const value = document.getElementById("value");
+  value.disabled = false;
+  if (e.target.value === "withdraw") {
+    value.disabled = true;
+  }
+});
