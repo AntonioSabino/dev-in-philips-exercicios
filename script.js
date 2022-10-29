@@ -12,10 +12,15 @@ function getData() {
   };
 }
 
-function deposit() {}
+function deposit(account, amount) {
+  if (amount > 0) {
+    account.saldo += amount;
+    alert(`Depósito de R$ ${amount.toFixed(2)} realizado com sucesso!`);
+  }
+}
 
 function getBalance(account) {
-  alert(`Seu saldo é de R$ ${account.saldo}`);
+  alert(`Seu saldo é de R$ ${account.saldo.toFixed(2)}`);
 }
 
 function withdraw() {}
@@ -55,8 +60,9 @@ operationForm.addEventListener("submit", (e) => {
     return;
   }
 
+  const amount = Number(e.target.value.value);
   const operation = e.target.operation.value;
-  if (operation === "deposit") deposit();
+  if (operation === "deposit") deposit(account, amount);
   if (operation === "balance") getBalance(account);
   if (operation === "withdraw") withdraw();
 });
