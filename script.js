@@ -29,7 +29,7 @@ const select = document.querySelector("select");
 select.addEventListener("change", (e) => {
   const value = document.getElementById("value");
   value.disabled = false;
-  if (e.target.value === "withdraw") {
+  if (e.target.value === "balance") {
     value.disabled = true;
   }
 });
