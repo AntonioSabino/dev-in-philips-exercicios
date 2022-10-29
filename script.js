@@ -15,7 +15,8 @@ function getData() {
 function deposit(account, amount) {
   if (amount > 0) {
     account.saldo += amount;
-    alert(`Depósito de R$ ${amount.toFixed(2)} realizado com sucesso!`);
+    alert(`Depósito de R$ ${amount.toFixed(2)} realizado com sucesso!
+    Seu saldo atual é de R$ ${account.saldo.toFixed(2)}`);
   }
 }
 
@@ -23,7 +24,15 @@ function getBalance(account) {
   alert(`Seu saldo é de R$ ${account.saldo.toFixed(2)}`);
 }
 
-function withdraw() {}
+function withdraw(account, amount) {
+  if (amount > 0 && amount <= account.saldo) {
+    account.saldo -= amount;
+    alert(`Saque de R$ ${amount.toFixed(2)} realizado com sucesso!
+    Seu saldo atual é de R$ ${account.saldo.toFixed(2)}`);
+  } else {
+    alert("Saldo insuficiente! Não foi possível realizar o saque.");
+  }
+}
 
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
@@ -64,5 +73,5 @@ operationForm.addEventListener("submit", (e) => {
   const operation = e.target.operation.value;
   if (operation === "deposit") deposit(account, amount);
   if (operation === "balance") getBalance(account);
-  if (operation === "withdraw") withdraw();
+  if (operation === "withdraw") withdraw(account, amount);
 });
