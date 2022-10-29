@@ -4,6 +4,11 @@ Repositório criado para postar os exercícios semanais do programa DEVinPhilips
 
 ### Exercícios
 
-- [Semana 1](https://github.com/AntonioSabino/dev-in-philips-exercicios/tree/semana1)
-- [Semana 2](https://github.com/AntonioSabino/dev-in-philips-exercicios/tree/semana2)
-- [Semana 3](https://github.com/AntonioSabino/dev-in-philips-exercicios/tree/semana3)
+Desenvolvimento de um sistema de conta bancária para pessoa física. 
+
+Nessa primeira versão será contemplado: 
+
+- Cadastro de clientes
+- Depósitos
+- Saques
+- Consulta de saldo
