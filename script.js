@@ -11,6 +11,12 @@ function getData() {
   };
 }
 
+function deposit() {}
+
+function getBalance() {}
+
+function withdraw() {}
+
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -28,8 +34,20 @@ form.addEventListener("submit", (e) => {
 const select = document.querySelector("select");
 select.addEventListener("change", (e) => {
   const value = document.getElementById("value");
-  value.disabled = false;
-  if (e.target.value === "balance") {
-    value.disabled = true;
-  }
+  operation === "balance" ? (value.disabled = true) : (value.disabled = false);
+});
+
+const operationForm = document.querySelector(".operation-form");
+operationForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = getData();
+  const account = accounts.find((account) => account.conta === data.conta);
+
+  if (!account) alert("Conta não encontrada");
+  if (account.senha !== data.senha) alert("Senha incorreta");
+
+  const operation = select.value;
+  if (operation === "deposit") deposit();
+  if (operation === "balance") getBalance();
+  if (operation === "withdraw") withdraw();
 });

@@ -43,7 +43,7 @@ main {
   width: 85%;
 }
 
-.registration-form {
+.registration-form, .operation-form {
   align-items: center;
   background-color: #f2f2f2;
   border-radius: 15px;
