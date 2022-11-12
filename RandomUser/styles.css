@@ -1,0 +1,15 @@
+* {
+  list-style: none;
+}
+
+.user {
+  background-color: darkgray;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
