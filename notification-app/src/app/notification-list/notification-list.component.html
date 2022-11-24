@@ -2,8 +2,11 @@
 <ul class="list-group">
   <!-- notification items -->
   <li class="list-group-item" *ngFor="let notification of notifications">
-    <h4 class="list-group-item-heading">{{ notification.title }}</h4>
-    <p class="list-group-item-text">{{ notification.subtitle }}</p>
-    <p class="list-group-item-text">{{ notification.date }}</p>
+    <div [ngClass]="{'opacity': notification.read}">
+      <h4 class="list-group-item-heading">{{ notification.title }}</h4>
+      <p class="list-group-item-text">{{ notification.subtitle }}</p>
+      <p class="list-group-item-text">{{ notification.date }}</p>
+    </div>
+    <button (click)="makeRead(notification)">Lido</button>
   </li>
 </ul>
