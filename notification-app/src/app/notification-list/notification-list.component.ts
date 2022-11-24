@@ -6,5 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./notification-list.component.scss']
 })
 export class NotificationListComponent {
-
+  notifications = [
+    {
+      title: 'Notification 1',
+      subtitle: 'This is the first notification',
+      date: '24/11/2022'
+    },
+    {
+      title: 'Notification 2',
+      subtitle: 'This is the second notification',
+      date: '24/11/2022'
+    },
+    {
+      title: 'Notification 3',
+      subtitle: 'This is the third notification',
+      date: '24/11/2022'
+    },
+    {
+      title: 'Notification 4',
+      subtitle: 'This is the fourth notification',
+      date: '24/11/2022'
+    },
+    {
+      title: 'Notification 5',
+      subtitle: 'This is the fifth notification',
+      date: '24/11/2022'
+    },
+  ];
 }
