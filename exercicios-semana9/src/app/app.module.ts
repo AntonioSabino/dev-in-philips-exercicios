@@ -3,20 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
-import { ButtonComponent } from './button/button.component';
+import { FormComponent } from './components/form/form.component';
+import { ButtonComponent } from './components/button/button.component';
+import { RegistroMateriaComponent } from './pages/registro-materia/registro-materia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    ButtonComponent
+    ButtonComponent,
+    RegistroMateriaComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
