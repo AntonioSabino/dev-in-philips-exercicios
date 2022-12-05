@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './components/form/form.component';
 import { ButtonComponent } from './components/button/button.component';
 import { RegistroMateriaComponent } from './pages/registro-materia/registro-materia.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { RegistroMateriaComponent } from './pages/registro-materia/registro-mate
     FormComponent,
     ButtonComponent,
     RegistroMateriaComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
