@@ -1,5 +1,6 @@
 <div class="container">
   <app-navbar></app-navbar>
   <!-- <app-item-card [personagem]="personagem"></app-item-card> -->
+  <app-search (searchChange)="action($event)"></app-search>
   <router-outlet></router-outlet>
 </div>

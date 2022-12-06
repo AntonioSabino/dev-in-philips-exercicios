@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'exercicios-semana9';
 
   @Input() personagem = {
@@ -16,4 +16,10 @@ export class AppComponent {
     descricao:
       'Dwight Kurt Schrute III é um personagem fictício em The Office e é interpretado pelo ator americano Rainn Wilson. O personagem de Dwight era um vendedor e assistente do gerente regional, na empresa fictícia de distribuição de papel, Dunder Mifflin, antes de suas promoções em temporadas posteriores.',
   };
+
+  ngOnInit(): void {}
+
+  action(event: any) {
+    console.log(event);
+  }
 }
